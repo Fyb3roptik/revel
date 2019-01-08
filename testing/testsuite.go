@@ -256,6 +256,10 @@ func (r *TestRequest) Send() {
 	for _, c := range cookies {
 		r.AddCookie(c)
 	}
+
+	// Set revel into test mode
+	revel.TestMode = true
+
 	r.MakeRequest()
 }
 

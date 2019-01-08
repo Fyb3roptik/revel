@@ -41,6 +41,7 @@ var (
 	Config  *config.Context
 	RunMode string // Application-defined (by default, "dev" or "prod")
 	DevMode bool   // if true, RunMode is a development mode.
+	TestMode bool   // if true, TestRunner is running.
 
 	// Revel installation details
 	RevelPath string // e.g. "$GOPATH/src/github.com/revel/revel"
